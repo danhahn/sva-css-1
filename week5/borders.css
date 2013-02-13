@@ -1,0 +1,46 @@
+body {
+	font: 12px arial;
+	background-color: #c0c0c0;
+	color: gray;
+}
+
+div {
+	border-width: 10px;
+	border-style: solid;
+	border-color: blue;
+	
+	border: 5px solid blue;
+}
+
+.example {
+	border-color: red;
+	
+	border-bottom-width: 10px;
+	border-bottom-style: dashed;
+	border-bottom-color: green;
+	
+	border-bottom: 10px dashed green;
+	
+}
+
+.content {
+	border-top: 5px dotted teal;
+}
+
+h1 {
+	border-bottom: 2px solid black;
+}
+
+li {
+	border-bottom: 1px solid gray;
+	color: black;
+	list-style: none;
+}
+
+li.last {
+	border-bottom: none;
+}
+
+
+
+

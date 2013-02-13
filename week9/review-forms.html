@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<head>
+	<title>Review of Forms</title>
+	
+	<style type="text/css">
+	body {
+		font: 14px arial;
+		background: url(images/site.png) repeat-x fixed #e5933f;
+	}
+	
+	h1, h2, h3, p {
+		margin: 0;
+	}
+	
+	#wrapper {
+		width: 800px;
+		margin: 10px auto;
+		padding: 20px;
+		border: 2px solid #432d22;
+		background: url(images/wood.jpg) #ffffff;
+		color: #ffffff;
+	}
+	
+	section {
+		border: 2px solid #a90b02;
+		padding: 10px;
+		margin: 10px 0;
+		background: url(images/pizza.png) no-repeat right center #ffffff;
+		color: #333333;
+	}
+	
+	.row {
+		margin: 10px 0;
+		clear: both;
+		overflow: hidden;
+	}
+	
+	.row-label {
+		float: left;
+		width: 120px;
+		text-align: right;
+		margin-right: 10px;
+		font-weight: bold;
+		margin-top: 3px;
+	}
+	
+	.row-option {
+		float: left;
+		width: 400px;
+	}
+	
+	input, select, textarea {
+		border: 2px solid #a0a0a0;
+		padding: 2px 5px;
+		font-size: 14px;
+	}
+	
+	textarea {
+		width: 370px;
+		height: 200px;
+	}
+	
+	button {
+		border: 2px solid #a0c0c0;
+		padding: 2px 5px;
+		font-size: 14px;
+		background-color: green;
+		color: white;
+	}
+	button:active {
+		background-color: red;
+	}
+	
+	</style>
+	
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Review Of Forms</h1>
+			<form action="search/search.jsp" method="get" name="search" id="search">
+			
+			</form>
+		</header>
+
+		<div id="content">
+			<form action="/order/pizza.php" method="get" name="order-form" id="order-form">
+			<h2>Order a pizza</h2>
+			<p>Lets order a pizza</p>
+
+			<section>
+				<h3>Personal Info</h3>
+				<div class="row">
+					<label for="f-name" class="row-label">Full Name</label>
+					<div class="row-option">
+						<input type="text" name="full-name" id="f-name" value="Dan Hahn">
+					</div>
+				</div>
+				
+				<div class="row">
+					<label for="address1" class="row-label">Address 1</label>
+					<div class="row-option">
+						<input type="text" name="address1" id="address1">
+					</div>
+				</div>
+				
+				<div class="row">
+					<label for="address2" class="row-label">Address 2</label>
+					<div class="row-option">
+						<input type="text" name="address2" id="address2" disabled="disabled">
+					</div>
+				</div>
+				
+				<div class="row">
+					<label for="city" class="row-label">City</label>
+					<div class="row-option">
+						<input type="text" name="city" id="city">
+					</div>
+				</div>
+				
+				<div class="row">
+					<label for="state" class="row-label">State</label>
+					<div class="row-option">
+						<select name="state" id="state">
+							<option value="">-- Choose --</option>
+							<option value="ny">New York</option>
+							<option value="nj">New Jersey</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="row">
+					<label for="zip-code" class="row-label">Zip Code</label>
+					<div class="row-option">
+						<input type="text" name="zip" id="zip-code" maxlength="5">
+					</div>
+				</div>
+			</section>
+
+
+			<section>
+				<h3>Pizza Options</h3>
+				<div class="row">
+					<label for="number" class="row-label">Number Of Pizzas</label>
+					<div class="row-option">
+						<select name="number" id="number">
+							<option value=""> -- Select --</option>
+							<option value="1">1</option>
+							<option value="2" selected="selected">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="row-label">Type of Crust</div>
+					<div class="row-option">
+						<input type="radio" name="crust" value="thick" id="thick">
+						<label for="thick">Thick Crust</label><br/>
+						
+						<input type="radio" name="crust" value="thin" id="thin">
+						<label for="thin">Thin Crust</label><br/>
+						
+						<input type="radio" name="crust" value="deep" id="deep">
+						<label for="deep">Deep Dish</label><br/>
+						
+						<input type="radio" name="crust" value="stuffed" id="stuffed" checked="checked">
+						<label for="stuffed">Stuffed Crust</label><br/>
+						
+						<input type="radio" name="crust" value="other" id="other" disabled="disabled">
+						<label for="other">Other</label>
+						<input type="text" name="other-value" disabled="disabled">
+					</div>
+				</div>
+				<div class="row">
+					<div class="row-label">Toppings</div>
+					<div class="row-option">
+						<input type="checkbox" name="topping" value="cheese" checked="checked">Cheese
+						<input type="checkbox" name="topping" value="pepperoni">Pepperoni
+						<input type="checkbox" name="topping" value="tomato">Tomato
+						<input type="checkbox" name="topping" value="onion">Onion
+						<input type="checkbox" name="topping" value="mushrooms">Mushrooms
+						<input type="checkbox" name="topping" value="sausage">Sausage
+						<input type="checkbox" name="topping" value="chicken">Chicken
+						<input type="checkbox" name="topping" value="bacon">Bacon
+						<input type="checkbox" name="topping" value="pepper">Green Pepper
+						<input type="checkbox" name="topping" value="olives" disabled="disabled">Olives
+					</div>
+				</div>
+				<div class="row">
+					<label for="comments" class="row-label">Comments</label>
+					<div class="row-option">
+						<textarea name="comments" id="comments"></textarea>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<button type="submit">Place Order</button>
+				<button type="reset">Cancel</button>
+			</section>
+
+			</form>
+		</div>
+
+	</div>
+</body>
+</html>

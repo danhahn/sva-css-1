@@ -1,0 +1,51 @@
+body {
+	background-color: #c0c0c0;
+	font: 12px arial;
+}
+
+h1, h2, h3, p {
+	margin: 0;
+}
+
+#site {
+	background-color: #ffffff;
+	width: 890px;
+	margin: 0 auto;
+}
+
+header {
+	background-color: black;
+	color: #ffffff;
+	padding: 20px;
+}
+
+.gallery {
+	padding: 20px;
+}
+
+.photo {
+	border: 1px solid gray;
+	padding: 20px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	float: left;
+}
+
+.view {
+	border: 1px solid gray;
+	padding: 20px;
+}
+
+footer {
+	background-color: #000000;
+	color: #ffffff;
+	padding: 20px;
+	clear: left;
+	text-align: right;
+}
+
+
+
+
+
+

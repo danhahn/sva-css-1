@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Style a table</title>
+	<style type="text/css">
+	.contact {
+		border: 1px solid gray;
+		width: 400px;
+		border-collapse: collapse;
+	}
+	
+	.contact th,
+	.contact td {
+		border: 1px solid gray;
+		padding: 5px;
+	}
+	
+	.contact th {
+		text-align: left;
+		background-color: black;
+		color: white;
+	}
+	
+	.color1 {
+		background-color: #cc00cc;
+	}
+	
+	.color2 {
+		background-color: #00cc00;
+	}
+	
+	.name {
+		width: 120px;
+	}
+	
+	</style>
+</head>
+
+<body>
+	
+<table class="contact">
+	<tr>
+		<th class="name">Name</th>
+		<th>Email</th>
+	</tr>
+	<tr class="color1">
+		<td class="name">Dan</td>
+		<td>dan@svahtml.com</td>
+	</tr>
+	<tr class="color2">
+		<td class="name">Tim</td>
+		<td>tim@apple.com</td>
+	</tr>
+	<tr class="color1">
+		<td class="name">Larry</td>
+		<td>larry@google.com</td>
+	</tr>
+</table>
+
+
+</body>
+</html>

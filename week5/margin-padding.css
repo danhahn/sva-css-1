@@ -1,0 +1,58 @@
+body {
+	font: 12px arial;
+	background-color: #c0c0c0;
+}
+
+.paddingExample {
+	background-color: #fff;
+	text-align: justify;
+	border: 1px solid black;
+	padding-top: 20px;
+	padding-right: 50px;
+	padding-bottom: 30px;
+	padding-left: 25px;
+	
+	padding: 20px 50px 30px 25px;
+}
+
+.marginExample {
+	background-color: #cc00cc;
+	color: #ffffff;
+	padding: 20px;
+	border: 1px solid black;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 30px;
+	margin-left: 5px;
+	
+	margin: 10px 0 20px;
+}
+
+.example {
+	background-color: #4f4f4f;
+	color: #ffffff;
+	padding: 20px;
+	border: 1px solid black;
+	margin: 10px 0;
+}
+
+.example p {
+	margin: 0;
+}
+
+.badExample {
+	background-color: #ffffff;
+	color: #4f4f4f;
+	border: 1px solid #cc00cc;
+	padding: 10px 20px;
+	margin: 20px 0;
+}
+
+.badExample p {
+	margin: 10px 0;
+}
+
+
+
+
+

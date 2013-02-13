@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<head>	
+	<title>Understanding Froms</title>
+	<style type="text/css">
+	body {
+		font: 12px arial;
+		background-color: #c0c0c0;
+		margin: 0;
+		color: #333;
+	}
+
+	h1, h2, h3, h4, h5, p, ul {
+		margin: 0;
+	}
+
+	#site {
+		width: 800px;
+		padding: 10px 20px;
+		background-color: #fff;
+		margin: 10px auto;
+		border: 2px solid #939393;
+	}
+
+	.topic {
+		border: 1px solid #c0c0c0;
+		background-color: #F2F2F2;
+		padding: 10px;
+		margin: 10px 0;
+		box-shadow: 0 3px 2px gray;
+	}
+
+	h1 {
+		margin-bottom: 10px;
+		color: #440004;
+	}
+
+	h2 {
+		margin-bottom: 10px;
+	}
+
+	h3 {
+		margin-bottom: 10px;
+		border-bottom: 1px solid #c0c0c0;
+		padding-bottom: 5px;
+		color: #2B2B2B;
+	}
+
+	h4 {
+		margin: 10px 0;
+		font-size: 13px;
+		color: #604F1F;
+	}
+
+	h5 {
+		margin: 10px 0;
+		font-size: 13px;
+		text-transform: uppercase;
+		color: #0D441F;
+	}
+
+	ul {
+		margin: 10px;
+		padding-left: 10px;
+	}
+
+	ul ul {
+		margin: 0;
+	}
+
+	strong {
+		color: #440004;
+	}
+	</style>
+</head>
+<body>
+
+<div id="site">
+	<h1>Working with Forms</h1>
+	<p>HTML forms are used to collcet data and send it to a server to procces.</p>
+	<div class="topic">
+		<h2>FORM tag</h2>
+		<p>The FORM tag is a wrapper tag that is used to group the form elements together. </p>
+
+		<h3>FORM Attributes</h3>
+		<ul>
+			<li><strong>action</strong> - Location of page that data is being sent to.</li>
+			<li><strong>method</strong> - How the data is sent to the ACTION page.
+				<ul>
+					<li><strong>get</strong> - data is sent int he URL string</li>
+					<li><strong>post</strong> - data is sent with the REQUEST.  This data is not visiable to the user.</li>
+				</ul>
+			</li>
+			<li><strong>NAME or ID</strong> - used to identify one from from an other.</li>
+		</ul>
+	</div>	
+
+	<h2>INPUT</h2>
+	
+	<p>The INPUT tag is an input type used with HTML forms.  The INPUT tag can be used in may ways by setting the TYPE attribute.</p>
+
+	<p>All input are inline elements.</p>
+	
+	<div class="topic">
+		<h3>text</h3>
+	
+		<p>An input with a attribute type of "text" defines a standard one line input field.</p>
+
+		<p>A text input has a standard width of 20 characters but this can be changed with CSS.</p>
+
+		<h4>Attributes</h4>
+
+		<ul>
+			<li><strong>name*</strong> - used to define one element from an other.  Also the way the page in the ACTION URL collects the data</li>
+			<li><strong>maxlength</strong> - denfines the maximum number of charaters allowed to be entered</li>
+			<li><strong>value</strong> - defines a "default" or set value of the element when the page loads.</li>
+			<li><strong>id</strong> - define a unique name that is used with the LABEL tag.</li>
+			<li><strong>disabled</strong> - makes the input not active.  When an input is disabled the input is grayed out and can not be clicked in to.</li>
+			<li><strong>readonly</strong> - disables the the user form being able to change the value in the input.  The content can be copied by not changed</li>
+		</ul>
+		<p>* = required</p>
+
+		<h5>name and id</h5>
+
+
+
+		<h5>value</h5>
+
+
+
+		<h5>disabled</h5>
+		
+
+		
+		<h5>readonly</h5>
+		
+
+	</div>
+	
+	<div class="topic">
+		<h3>password</h3>
+
+		<p>An input with tyep of "password" is much like "text" but the content is protected and each letter is repaced with a "*".</p>
+
+		<h4>Attribues</h4>
+
+		<p>NOTE: password and text have the same attributes</p>
+
+		<ul>
+			<li><strong>name*</strong> - used to define one element from an other.  Also the way the page in the ACTION URL collects the data</li>
+			<li><strong>maxlength</strong> - denfines the maximum number of charaters allowed to be entered</li>
+			<li><strong>value</strong> - defines a "default" or set value of the element when the page loads.</li>
+			<li><strong>id</strong> - define a unique name that is used with the LABEL tag.</li>
+			<li><strong>disabled</strong> - makes the input not active.  When an input is disabled the input is grayed out and can not be clicked in to.</li>
+			<li><strong>readonly</strong> - disables the the user form being able to change the value in the input.  The content can be copied by not changed</li>
+		</ul>
+		<p>* = required</p>
+
+		<h5>name and id</h5>
+
+
+	</div>
+
+	<div class="topic">
+		<h3>radio</h3>
+
+		<p>Input type "radio" is a group of options when the user can select one option from a group of many.</p>
+
+		<h4>Attributes</h4>
+		<ul>
+			<li><strong>name*</strong> - used to define one element from an other.  Also the way the page in the ACTION URL collects the data</li>
+			<li><strong>value*</strong> - defines a "default" or set value of the element when the page loads.</li>
+			<li><strong>id</strong> - define a unique name that is used with the LABEL tag.</li>
+			<li><strong>disabled</strong> - makes the input not active.  When an input is disabled the input is grayed out and can not be clicked in to.</li>	
+			<li><strong>checked</strong> - select an option at page load.</li>		
+		</ul>
+		<p>* = required</p>
+
+		<p>Unlike the "text" input were the user can set the value to what ever they like. Values must be set on each input.</p>
+
+		<p>Items in the same group will have the same name.  Only one name and value will be sent to the ACTION url.</p>
+
+		<h5>example</h5>
+
+
+	</div>
+
+	<div class="topic">
+		<h3>checkbox</h3>
+
+		<p>Like "radio" type "checkbox" let you choose from a group but with a checkbox you can choose many from a group of many.</p>
+
+		<h4>Attributes</h4>
+		<ul>
+			<li><strong>name*</strong> - used to define one element from an other.  Also the way the page in the ACTION URL collects the data</li>
+			<li><strong>value*</strong> - defines a "default" or set value of the element when the page loads.</li>
+			<li><strong>id</strong> - define a unique name that is used with the LABEL tag.</li>
+			<li><strong>disabled</strong> - makes the input not active.  When an input is disabled the input is grayed out and can not be clicked in to.</li>	
+			<li><strong>checked</strong> - select an option at page load.</li>	
+		</ul>
+		<p>* = required</p>
+
+		<h5>example</h5>
+
+	</div>
+
+	<div class="topic">
+		<h3>Select Box</h3>
+
+		<p>The select box or drop down box allows you to select one from a group of many with only taking up a very little space.</p>
+
+		<h5>example</h5>
+
+	</div>
+
+	<div class="topic">
+		<h3>textara</h3>
+
+		<p>With a textarea the use is able to enter large amonts of text.  Textarea can have many lines unlike a text box</p>
+
+		<p>textarea are often used of things like email messages</p>
+
+		<h5>example</h5>
+
+	</div>
+
+
+</div>
+	
+</body>
+</html>

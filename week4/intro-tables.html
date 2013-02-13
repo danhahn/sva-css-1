@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Intro to tables</title>
+	
+	<style type="text/css">
+	.example thead th {
+		color: red;
+	}
+	
+	.example tbody th {
+		color: green;
+	}
+	
+	.example td {
+		color: blue;
+	}
+	
+	.span-table {
+		width: 400px;
+	}
+	</style>
+	
+</head>
+
+<body>
+
+<h1>Intro to tables</h1>
+
+<p>Tables are a way to display a chart of data in HTML form.</p>
+
+<h2>Parts of the table</h2>
+
+<ul>
+	<li><strong>table</strong> - defines the start and stop of the table.</li>
+	<li><strong>tr</strong> - <em>table row</em> - defines the start and stop of a row.</li>
+	<li><strong>td</strong> - <em>table data</em> - defines the content area of the table.  All content must be wrapped with the TD tag. </li>
+</ul>
+
+<!-- HTML Comment -->
+
+<!-- begin table -->
+<table border="1">
+	<tr>
+		<td>My first table</td>
+	</tr>
+</table>
+<!-- end table -->
+
+<h2>Add a row to the table</h2>
+
+<p>When adding a row to the table you need to add a new TR and TD.</p>
+
+<!-- begin table -->
+<table border="1">
+	<tr>
+		<td>Row 1 Col 1</td>
+	</tr>
+	<tr>
+		<td>Row 2 Col 1</td>
+	</tr>
+</table>
+<!-- end table -->
+
+<h2>Add a column to the table</h2>
+
+<p>When adding a column to the the table....</p>
+
+<!-- begin table -->
+<table border="1">
+	<tr>
+		<td>Row 1 Col 1</td>
+		<td>Row 1 Col 2</td>
+	</tr>
+	<tr>
+		<td>Row 2 Col 2</td>
+		<td>Row 2 Col 2</td>
+	</tr>
+</table>
+<!-- end table -->
+
+<h2>Table Header</h2>
+
+<!-- begin table -->
+<table border="1">
+	<tr>
+		<th>Name</th>
+		<th>Email</th>
+	</tr>
+	<tr>
+		<td>Dan</td>
+		<td>dan@svahtml.com</td>
+	</tr>
+	<tr>
+		<td>Jennifer</td>
+		<td>jenny@theblock.com</td>
+	</tr>
+</table>
+<!-- end table -->
+
+<h2>Grouping Content</h2>
+
+<h3>thead - table head</h3>
+
+<!-- begin table -->
+<table border="1">
+	<thead>
+		<tr>
+			<td>Table Data</td>
+			<th>Table Header</th>
+		</tr>
+	</thead>
+</table>
+<!-- end table -->
+
+<h3>tbody - table body</h3>
+
+<!-- begin table -->
+<table border="1" class="example">
+	<thead>
+		<tr>
+			<th>City</th>
+			<th>Year</th>
+			<th>Amount</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>New York</th>
+			<td>2010</td>
+			<td>75</td>
+		</tr>
+		<tr>
+			<th>Boston</th>
+			<td>1999</td>
+			<td>12</th>
+		</tr>
+	</tbody>
+</table>
+<!-- end table -->
+
+<h2>Col span and Row span</h2>
+
+<h3></h3> 
+
+<table border="1" class="span-table">
+	<tr>
+		<td colspan="4">A</td>
+	</tr>
+	<tr>
+		<td rowspan="3">E</td>
+		<td>F</td>
+		<td>G</td>
+		<td>H</td>
+	</tr>
+	<tr>
+		<td>J</td>
+		<td rowspan="2" colspan="2">K</td>
+	</tr>
+	<tr>
+		<td>N</td>
+	</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</body>
+</html>

@@ -1,0 +1,123 @@
+body {
+	font: 12px arial;
+	margin: 0;
+	background-color: #c0c0c0;
+	color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol, li, p {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 1em;
+	font-weight: normal;
+}
+
+a {
+	color: red;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#container {
+	width: 800px;
+	margin: 0 auto;
+	background-color: #cc00cc;
+}
+
+header {
+	background-color: black;
+	padding: 20px;
+}
+
+header h1 {
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+}
+
+nav a:hover {
+	text-decoration: none;
+} 
+
+#global {
+	background-color: red;
+	overflow: hidden;
+}
+
+#global li {
+	float: left;
+}
+
+#global a {
+	color: white;
+	font-weight: bold;
+	display: block;
+	padding: 5px 10px;
+}
+
+#global a:hover {
+	background-color: #cc00cc;
+}
+
+#nav, article {
+	float: right;
+}
+
+#nav {
+	background-color: #cc00cc;
+	width: 200px;
+}
+
+#nav a {
+	display: block;
+	padding: 5px 10px;
+	color: white;
+	border-bottom: 1px dotted black;
+}
+
+#nav a:hover {
+	font-weight: bold;
+}
+
+article {
+	background-color: white;
+	width: 560px;
+	padding: 10px 20px;
+	box-shadow: 0 0 10px black inset;
+}
+
+article h2 {
+	font-size: 20px;
+	border-bottom: 1px solid black;
+	margin-bottom: 10px;
+}
+
+article p {
+	margin: 10px 0;
+	line-height: 1.5em;
+	text-align: justify;
+}
+
+article p.byline {
+	line-height: 1em;
+	font-style: italic;
+}
+
+footer {
+	background-color: black;
+	clear: both;
+	border-top: 3px solid #cc00cc;
+	padding: 10px 20px;
+	color: white;
+	text-align: right;
+}
+
+
+
+
+
